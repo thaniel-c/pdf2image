@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2050
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "PDF2IMAGE", "PDF2IMAGE\PDF2IMAGE.pyproj", "{C9B8D93F-9F2A-4A30-9D2F-0BD1F952A427}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C9B8D93F-9F2A-4A30-9D2F-0BD1F952A427}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9B8D93F-9F2A-4A30-9D2F-0BD1F952A427}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {682E5B35-126C-469C-A6BD-D1B0396A6FEC}
+	EndGlobalSection
+EndGlobal
