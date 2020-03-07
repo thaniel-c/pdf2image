@@ -8,11 +8,9 @@ import tkinter as tk
 from tkinter import filedialog
 import math
 
-
 #OPTIONS AND PARAMETERS
 imgperRow = 10
 masterDPI = 100
-
 
 #SETUP
 root = tk.Tk()
@@ -37,15 +35,10 @@ lengthofPDF = len(pages)
 #CACHE CLEAR
 os.system('echo "y" | del /S D:\PDF\DUMP\out\ROWs\*.*')
 
-
-
-
 #####################################################################################################################################################################################################
 for page in blankpages:
     page.save('D:\PDF\DUMP' + '\BLANK.jpg', 'JPEG')
     blanker = 'D:\PDF\DUMP' + '\BLANK.jpg'
-
-
 
 for page in pages:
     PageCount += 1
@@ -53,8 +46,6 @@ for page in pages:
     image_Export.append('D:\PDF\DUMP' + '\out' + str(PageCount) + '.jpg')
 
     print((PageCount / lengthofPDF) * 100)
-
-
 
 sizeMain = 1062, 1375
 
@@ -84,33 +75,16 @@ for pageNumber in range(lengthofPDF // imgperRow):
 
 #LEFT OVERS 
 
-
 for pageNumber in range(lengthofPDF % imgperRow):
     active_RowF = []
-
-
+    
     for x in range(imgperRow):
-
-       
-
         
-
        try:
            master_Tracker += 1
            active_RowF.append(image_Export[master_Tracker])
        except:
            active_RowF.append(blanker)
-
-      
-           
-
-
-           
-
-        
-        
-
-
 
     #add images to row
     list_imSECOND = active_RowF
@@ -124,9 +98,6 @@ for pageNumber in range(lengthofPDF % imgperRow):
     imgs_combSECOND.save('D:\PDF\DUMP\out\ROWs\Row' + str(rowNum) + '.jpg' )
     rowIMGs.append('D:\PDF\DUMP\out\ROWs\Row' + str(rowNum) + '.jpg' )
     
-
-
-
 
 #FINAL VERTICAL ROW STACKER
 list_im = rowIMGs
